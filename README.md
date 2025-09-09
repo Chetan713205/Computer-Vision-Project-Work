@@ -92,7 +92,7 @@ Specify your license here—MIT, Apache 2.0, or whichever suits your project bes
 
 ## Contact
 
-Got questions or feedback? Reach me at **[chetan713205@example.com](mailto:chetantiwaridgp5@gmail.com)** (feel free to replace with your actual contact).
+Got questions or feedback? Reach me at **[chetantiwaridgp5@example.com](mailto:chetantiwaridgp5@gmail.com)** (feel free to replace with your actual contact).
 
 Happy coding! 😄👨‍💻🛠️
 
