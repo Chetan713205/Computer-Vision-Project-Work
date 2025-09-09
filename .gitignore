@@ -1,0 +1,14 @@
+# Virtual environment
+myenv/
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+*.egg-info/
+Clothing_Attribute_detection_Computer_Vision.egg-info/

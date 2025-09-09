@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Attribute Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clothing Attribute Detection System</h1>
+            <p>Upload an image to analyze clothing attributes, style, and colors</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="upload-content">
+                    <i class="upload-icon">📁</i>
+                    <p>Click to upload or drag and drop an image</p>
+                    <p class="upload-hint">Supports: JPG, PNG, GIF</p>
+                </div>
+            </div>
+            <button id="analyzeBtn" class="analyze-btn" disabled>Analyze Image</button>
+        </div>
+
+        <div class="preview-section" id="previewSection" style="display: none;">
+            <h3>Image Preview</h3>
+            <img id="imagePreview" alt="Preview">
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing image...</p>
+        </div>
+
+        <div class="results-section" id="results" style="display: none;">
+            <h2>Analysis Results</h2>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>Style Classification</h3>
+                    <div class="result-value" id="styleResult"></div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Formality</h3>
+                    <div class="result-value" id="formalityResult"></div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Texture</h3>
+                    <div class="result-value" id="textureResult"></div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Detected Items</h3>
+                    <div class="result-value" id="itemsResult"></div>
+                </div>
+            </div>
+
+            <div class="color-analysis">
+                <h3>Color Analysis</h3>
+                <div class="color-palette" id="colorPalette"></div>
+            </div>
+
+            <div class="confidence-scores">
+                <h3>Confidence Scores</h3>
+                <div id="confidenceScores"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
