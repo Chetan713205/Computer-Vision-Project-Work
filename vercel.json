@@ -1,14 +1,14 @@
 {
   "version": 2,
   "functions": {
-    "api/index.py": {
-      "runtime": "@vercel/python"
+    "app/main.py": {
+      "runtime": "python3.9"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/api/index.py"
+      "source": "/(.*)",
+      "destination": "/app/main.py"
     }
   ]
 }
